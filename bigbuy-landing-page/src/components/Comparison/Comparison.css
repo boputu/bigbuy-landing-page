@@ -1,0 +1,44 @@
+.comparison-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .comparison-table {
+    border-collapse: collapse;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .comparison-table th,
+  .comparisonTitles {
+    border: none;
+  }
+  
+  .comparison-table tr:nth-child(2n) {
+    background-color: #e2f2fa;
+  }
+  
+  .check-icon {
+    color: green;
+  }
+  
+  .times-icon {
+    color: red;
+  }
+  
+  .comparisonTitlesOthers {
+    background-color: black;
+    color: white;
+  }
+
+  .comparisonTitlesBigbuy {
+    background-color: #ffce33;
+    color: black;
+  }
