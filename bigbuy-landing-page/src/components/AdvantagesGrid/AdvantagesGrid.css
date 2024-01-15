@@ -5,6 +5,7 @@
   }
   
   .advantage-cell {
+    border: 1px solid grey;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -17,24 +18,20 @@
   
   .lightest-blue {
     background-color: #f9fdff;
-    border: 3px solid grey;
   }
   
   .light-blue {
     background-color: #e2f2fa;
-    border: 3px solid grey;
     border-top: none;
   }
   
   .medium-blue {
     background-color: #f9fdff;
-    border: 3px solid grey;
     border-top: none;
   }
   
   .dark-blue {
     background-color: #e2f2fa;
-    border: 3px solid grey;
     border-top: none;
   }
   
