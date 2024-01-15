@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PackCard from './components/PackCard/PackCard.js';
 import AdvantagesGrid from './components/AdvantagesGrid/AdvantagesGrid.js';
 import Banner from './components/Banner/Banner.js';
+import ProcessImage from './components/ProcessImage/ProcessImage.js';
 import packs from './data/packs.json';
 import './styles.css';
 
@@ -46,6 +47,9 @@ const App = () => {
     <div className='background-container'>
     <div className="app">
     <Banner />
+      <h1>VENTAJAS EXCLUSIVAS DE NUESTROS PACKS</h1>
+      <AdvantagesGrid />
+      <ProcessImage />
       <h1 id="packs" className='packsIntroTitle'>ACTIVE EL <b className='underlinedTitle'>PACK MAYORISTA</b> QUE MEJOR SE AJUSTE A SU NEGOCIO</h1>
       <div className="payment-buttons">
         <button
@@ -67,8 +71,6 @@ const App = () => {
           <PackCard key={index} {...pack} prices={prices} />
         ))}
       </div>
-      <h1>VENTAJAS EXCLUSIVAS DE NUESTROS PACKS</h1>
-      <AdvantagesGrid />
     </div>
     </div>
   );
