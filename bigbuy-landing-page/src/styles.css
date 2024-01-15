@@ -5,6 +5,10 @@ body {
     padding: 0;
   }
 
+  .packsIntroTitle {
+    margin-bottom: 35px;
+  }
+
   h1 {
     align-items: center;
     text-align: center;
@@ -34,11 +38,6 @@ body {
   }
 
   .underlinedTitle {
-    position: relative;
-    display: inline-block;
-    background: #0090ff;
-    color: white;
-    padding: 2px 2px; 
-    z-index: 1;
+border-bottom: 2px solid grey;
   }
 

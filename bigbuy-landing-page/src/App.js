@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PackCard from './components/PackCard/PackCard.js';
 import AdvantagesGrid from './components/AdvantagesGrid/AdvantagesGrid.js';
+import Banner from './components/Banner/Banner.js';
 import packs from './data/packs.json';
 import './styles.css';
 
@@ -44,7 +45,8 @@ const App = () => {
     //This will check if paymentType is monthly or annual and will give a .active.
     <div className='background-container'>
     <div className="app">
-      <h1>Active el <span className='underlinedTitle'>pack mayorista</span> que mejor se ajuste a su negocio</h1>
+    <Banner />
+      <h1 id="packs" className='packsIntroTitle'>ACTIVE EL <b className='underlinedTitle'>PACK MAYORISTA</b> QUE MEJOR SE AJUSTE A SU NEGOCIO</h1>
       <div className="payment-buttons">
         <button
           className={`payment-button ${paymentType === 'monthly' ? 'active' : ''}`}
@@ -65,7 +67,7 @@ const App = () => {
           <PackCard key={index} {...pack} prices={prices} />
         ))}
       </div>
-      <h1>Ventajas exclusivas de nuestros packs</h1>
+      <h1>VENTAJAS EXCLUSIVAS DE NUESTROS PACKS</h1>
       <AdvantagesGrid />
     </div>
     </div>

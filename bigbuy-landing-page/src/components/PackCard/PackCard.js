@@ -23,7 +23,7 @@ const getImagePath = (imageName) => {
 
 const PackCard = ({ title, description, price, features, ctaText, image, prices }) => {
 
-    //This function is made because b2b is not a number and we don't want to change the price of b2b after clicking on monthly / annual.
+    //This function is made because b2b has no price and we don't want to change the price of b2b after clicking on monthly / annual.
     const formatPrice = (price) => {
         if (typeof price === 'number') {
           return `${price.toFixed(2)}€`;
@@ -63,7 +63,7 @@ const PackCard = ({ title, description, price, features, ctaText, image, prices 
         ))}
       </ul>
       {/* This button has the function to change the setShowAllFeatures() to true or false to know what text to show*/}
-      <button onClick={() => setShowAllFeatures(!showAllFeatures)}>
+      <button className="showMoreDetailsBtn" onClick={() => setShowAllFeatures(!showAllFeatures)}>
         {showAllFeatures ? 'Ver menos detalles' : 'Ver más detalles'}
       </button>
     </div>

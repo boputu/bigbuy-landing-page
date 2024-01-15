@@ -55,11 +55,16 @@
     margin-bottom: 8px;
   }
   
+  .showMoreDetailsBtn {
+    border: none;
+    background-color: #ffce3324;
+  }
+
   .ctaButton {
     background-color: #ffce33;
     font-weight: bold;
     color: black;
-    border: none;
+    border: 2px solid grey;
     padding: 10px;
     cursor: pointer;
     font-size: 14px;
@@ -96,7 +101,7 @@
     font-size: 2em;
     color: white;
     text-align: center;
-    z-index: 1; /* Text over the image */
+    z-index: 1;
   }
 
   .vertical-line {
