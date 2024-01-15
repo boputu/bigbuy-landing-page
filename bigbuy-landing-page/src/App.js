@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import PackCard from './components/PackCard'; //importing the component used for every pack.
+import PackCard from './components/PackCard/PackCard.js';
+import AdvantagesGrid from './components/AdvantagesGrid/AdvantagesGrid.js';
+import packs from './data/packs.json';
 import './styles.css';
 
 const App = () => {
@@ -36,40 +38,13 @@ const App = () => {
     updatePrices(paymentType);
   }, [paymentType, updatePrices]);
 
-    //Custom data for the packs
-    const packs = [
-      {
-        title: 'Marketplace',
-        description: 'Para clientes que quieren vender en marketplaces o ecommerce',
-        price: 119.00,
-        features: ['EJEMPLO 1', 'EJEMPLO 2', 'EJEMPLO 3', 'EJEMPLO 4', 'EJEMPLO 5', 'EJEMPLO 6', 'EJEMPLO 7', 'EJEMPLO 8', 'EJEMPLO 9'],
-        ctaText: 'Personaliza tu Experiencia',
-        image: 'marketplace.jpg',
-      },
-      {
-        title: 'Ecommerce',
-        description: 'Para clientes que quieren vender en ecommerce',
-        price: 89.00,
-        features: ['EJEMPLO 1', 'EJEMPLO 2', 'EJEMPLO 3', 'EJEMPLO 4', 'EJEMPLO 5', 'EJEMPLO 6', 'EJEMPLO 7', 'EJEMPLO 8', 'EJEMPLO 9'],
-        ctaText: 'Personaliza tu Experiencia',
-        image: 'ecommerce.jpg',
-      },
-      {
-        title: 'B2B',
-        description: 'Para clientes que quieren iniciarse en el dropshipping o realizar compras al por mayor',
-        price: 'Sin cuota mensual',
-        features: ['EJEMPLO 1', 'EJEMPLO 2', 'EJEMPLO 3', 'EJEMPLO 4', 'EJEMPLO 5', 'EJEMPLO 6', 'EJEMPLO 7', 'EJEMPLO 8', 'EJEMPLO 9'],
-        ctaText: 'Personaliza tu Experiencia',
-        image: 'b2b.jpg',
-      },
-    ];
-
   return (
     //Importing the component PackCard with their properties based on the packs array.
     //It will show on the view as many packs as the packs array have.
     //This will check if paymentType is monthly or annual and will give a .active.
+    <div className='background-container'>
     <div className="app">
-      <h1>Active el pack mayorista que mejor se ajuste a su negocio</h1>
+      <h1>Active el <span className='underlinedTitle'>pack mayorista</span> que mejor se ajuste a su negocio</h1>
       <div className="payment-buttons">
         <button
           className={`payment-button ${paymentType === 'monthly' ? 'active' : ''}`}
@@ -90,6 +65,9 @@ const App = () => {
           <PackCard key={index} {...pack} prices={prices} />
         ))}
       </div>
+      <h1>Ventajas exclusivas de nuestros packs</h1>
+      <AdvantagesGrid />
+    </div>
     </div>
   );
 };

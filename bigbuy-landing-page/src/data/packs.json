@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Marketplace",
+      "description": "Para clientes que quieren vender en marketplaces o ecommerce",
+      "price": 119.00,
+      "features": ["Acceso a conectores marketplaces", "Acceso a conectores ecommerce", "Compatible con Tienda Dropshipping 360º", "Sincronización API / FTP / CSV", "Envíos dropshipping ilimitados", "Compra mayorista (Unidades sueltas a precio mayorista PVD, sin pedido mínimo)", "Descuentos especiales y adicionales por volumen", "Key Acount Manager (KAM) a tu disposición", "Amplio catálogo con primeras marcas, stock en Europa y entregas rápidas (24 idiomas)", "Catálogo en continuo crecimiento (+30.000 productos nuevos al mes)", "Acceso a catálogo completo de Winning Products y TopVentas (Bloqueo de stock)"],
+      "ctaText": "Personaliza tu Experiencia",
+      "image": "marketplace.jpg"
+    },
+    {
+      "title": "Ecommerce",
+      "description": "Para clientes que quieren vender en ecommerce",
+      "price": 89.00,
+      "features": ["Acceso a conectores ecommerce (Shopify, Prestashop, Woocommerce, etc.)", "Compatible con Tienda Dropshipping 360º", "Sincronización API / FTP / CSV", "Envíos dropshipping ilimitados", "Compra mayorista (Unidades sueltas a precio mayorista PVD, sin pedido mínimo)", "Descuentos especiales y adicionales por volumen", "Key Acount Manager (KAM) a tu disposición", "Amplio catálogo con primeras marcas, stock en Europa y entregas rápidas (24 idiomas)", "Catálogo en continuo crecimiento (+30.000 productos nuevos al mes)", "Acceso a catálogo completo de Winning Products y TopVentas (Bloqueo de stock)"],
+      "ctaText": "Personaliza tu Experiencia",
+      "image": "ecommerce.jpg"
+    },
+    {
+      "title": "B2B",
+      "description": "Para clientes que quieren iniciarse en el dropshipping o realizar compras al por mayor",
+      "price": "Sin cuota mensual",
+      "features": ["Ideal para testear el servicio dropshipping y comprar al por mayor sin cuota mensual.", "Pagando esta cuota de alta puedes migrar a Ecommerce y Marketplace sin volver a pagarla.", "Hasta 3 envíos dropshipping al mes", "Compra mayorista (Unidades sueltas a precio mayorista PVD, sin pedido mínimo)", "Descuentos especiales y adicionales por volumen", "Key Acount Manager (KAM) a tu disposición", "Amplio catálogo con primeras marcas, stock en Europa y entregas rápidas (24 idiomas)", "Catálogo en continuo crecimiento (+30.000 productos nuevos al mes)", "Acceso a catálogo completo de Winning Products y TopVentas (Bloqueo de stock)"],
+      "ctaText": "Personaliza tu Experiencia",
+      "image": "b2b.jpg"
+    }
+  ]
