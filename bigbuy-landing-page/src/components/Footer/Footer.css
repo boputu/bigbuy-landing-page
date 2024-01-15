@@ -1,0 +1,22 @@
+.footer-container {
+    border-top: 3px solid grey;
+    text-align: center;
+    background-color: #f1f2f3;
+    padding-top: 1rem;
+  }
+  
+  .social-btn {
+    background-color: transparent;
+    border: none;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-btn:hover {
+    transform: scale(1.3);
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+  }

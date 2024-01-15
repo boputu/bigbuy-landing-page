@@ -2,17 +2,12 @@ import React from 'react';
 import './AdvantagesGrid.css';
 //Importing all the icons we want to use.
 import { TbPigMoney } from "react-icons/tb";
-import { MdDiscount } from "react-icons/md";
-import { TiCode } from "react-icons/ti";
-import { TiFlowParallel } from "react-icons/ti";
-import { TiFlash } from "react-icons/ti";
-import { MdLanguage } from "react-icons/md";
+import { MdDiscount, MdLanguage, MdLocalShipping } from "react-icons/md";
+import { TiCode, TiFlash, TiFlowParallel } from "react-icons/ti";
 import { CgShutterstock } from "react-icons/cg";
-import { FaSyncAlt } from "react-icons/fa";
+import { FaSyncAlt, FaFileCsv } from "react-icons/fa";
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { CiBoxes } from "react-icons/ci";
-import { FaFileCsv } from "react-icons/fa";
-import { MdLocalShipping } from "react-icons/md";
 
 //advantagesData, can be refactorized to be used from a .json file but we must be careful with the icon property.
 const AdvantagesGrid = () => {

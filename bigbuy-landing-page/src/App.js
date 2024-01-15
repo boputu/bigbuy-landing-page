@@ -3,6 +3,7 @@ import PackCard from './components/PackCard/PackCard.js';
 import AdvantagesGrid from './components/AdvantagesGrid/AdvantagesGrid.js';
 import Banner from './components/Banner/Banner.js';
 import ProcessImage from './components/ProcessImage/ProcessImage.js';
+import Footer from './components/Footer/Footer.js';
 import packs from './data/packs.json';
 import './styles.css';
 
@@ -47,8 +48,9 @@ const App = () => {
     <div className='background-container'>
     <div className="app">
     <Banner />
-      <h1>VENTAJAS EXCLUSIVAS DE NUESTROS PACKS</h1>
+    <h1>VENTAJAS EXCLUSIVAS DE NUESTROS PACKS</h1>
       <AdvantagesGrid />
+      <h1>¿CÓMO FUNCIONA?</h1>
       <ProcessImage />
       <h1 id="packs" className='packsIntroTitle'>ACTIVE EL <b className='underlinedTitle'>PACK MAYORISTA</b> QUE MEJOR SE AJUSTE A SU NEGOCIO</h1>
       <div className="payment-buttons">
@@ -71,6 +73,7 @@ const App = () => {
           <PackCard key={index} {...pack} prices={prices} />
         ))}
       </div>
+      <Footer/>
     </div>
     </div>
   );
