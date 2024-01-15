@@ -3,6 +3,7 @@ import PackCard from './components/PackCard/PackCard.js';
 import AdvantagesGrid from './components/AdvantagesGrid/AdvantagesGrid.js';
 import Banner from './components/Banner/Banner.js';
 import ProcessImage from './components/ProcessImage/ProcessImage.js';
+import B2bCreative from './components/B2bCreative/B2bCreative.js';
 import Comparison from './components/Comparison/Comparison.js';
 import Footer from './components/Footer/Footer.js';
 import packs from './data/packs.json';
@@ -74,6 +75,7 @@ const App = () => {
           <PackCard key={index} {...pack} prices={prices} />
         ))}
       </div>
+      <B2bCreative />
       <h1>NOS DIFERENCIAMOS A LO GRANDE</h1>
       <Comparison />
       <Footer/>
