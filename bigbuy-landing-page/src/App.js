@@ -8,6 +8,17 @@ import Comparison from './components/Comparison/Comparison.js';
 import Footer from './components/Footer/Footer.js';
 import packs from './data/packs.json';
 import './styles.css';
+import ReactGA from "react-ga4";
+import LinkedInTag from 'react-linkedin-insight';
+
+const partnerId = '6547921';
+
+LinkedInTag.init(partnerId);
+ReactGA.initialize("G-PBDN4D89CK");
+ReactGA.send({
+  hitType: "pageview",
+  page: window.location.pathname,
+});
 
 const App = () => {
 
@@ -41,7 +52,7 @@ const App = () => {
   useEffect(() => {
     //Force the view to render the prices each time we load the page or by clicking an annual/month button.
     updatePrices(paymentType);
-  }, [paymentType, updatePrices]);
+  }, [paymentType]);
 
   return (
     //Importing the component PackCard with their properties based on the packs array.
