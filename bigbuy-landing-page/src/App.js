@@ -59,38 +59,38 @@ const App = () => {
     //It will show on the view as many packs as the packs array have.
     //This will check if paymentType is monthly or annual and will give a .active.
     <div className='background-container'>
-    <div className="app">
-    <Banner />
-    <h1>VENTAJAS EXCLUSIVAS DE NUESTROS PACKS</h1>
-      <AdvantagesGrid />
-      <h1>¿CÓMO FUNCIONA?</h1>
-      <ProcessImage />
-      <h1 id="packs" className='packsIntroTitle'>ACTIVE EL <b className='underlinedTitle'>PACK MAYORISTA</b> QUE MEJOR SE AJUSTE A SU NEGOCIO</h1>
-      <div className="payment-buttons">
-        <button
-          className={`payment-button ${paymentType === 'monthly' ? 'active' : ''}`}
-          onClick={() => handlePaymentTypeChange('monthly')}
-        >
-          Pago mensual
-        </button>
-        <button
-          className={`payment-button ${paymentType === 'annual' ? 'active' : ''}`}
-          onClick={() => handlePaymentTypeChange('annual')}
-        >
-          Pago anual <br />
-          <span style={{ fontSize: `10px` }}>Ahorro 17%</span>
-        </button>
+      <div className="app">
+        <Banner />
+        <h1>VENTAJAS EXCLUSIVAS DE NUESTROS PACKS</h1>
+        <AdvantagesGrid />
+        <h1>¿CÓMO FUNCIONA?</h1>
+        <ProcessImage />
+        <h1 id="packs" className='packsIntroTitle'>ACTIVE EL <b className='underlinedTitle'>PACK MAYORISTA</b> QUE MEJOR SE AJUSTE A SU NEGOCIO</h1>
+        <div className="payment-buttons">
+          <button
+            className={`payment-button ${paymentType === 'monthly' ? 'active' : ''}`}
+            onClick={() => handlePaymentTypeChange('monthly')}
+          >
+            Pago mensual
+          </button>
+          <button
+            className={`payment-button ${paymentType === 'annual' ? 'active' : ''}`}
+            onClick={() => handlePaymentTypeChange('annual')}
+          >
+            Pago anual <br />
+            <span style={{ fontSize: `10px` }}>Ahorro 17%</span>
+          </button>
+        </div>
+        <div className="packs-container">
+          {packs.map((pack, index) => (
+            <PackCard key={index} {...pack} prices={prices} />
+          ))}
+        </div>
+        <B2bCreative />
+        <h1>NOS DIFERENCIAMOS A LO GRANDE</h1>
+        <Comparison />
+        <Footer />
       </div>
-      <div className="packs-container">
-        {packs.map((pack, index) => (
-          <PackCard key={index} {...pack} prices={prices} />
-        ))}
-      </div>
-      <B2bCreative />
-      <h1>NOS DIFERENCIAMOS A LO GRANDE</h1>
-      <Comparison />
-      <Footer/>
-    </div>
     </div>
   );
 };
